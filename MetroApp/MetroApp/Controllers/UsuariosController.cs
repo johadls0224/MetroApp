@@ -37,7 +37,7 @@ namespace MetroApp.Controllers
                     usuarios.EstadoUsuario = true;
                     db.Usuarios.Add(usuarios);
                     db.SaveChanges();
-                    return RedirectToAction("Index", "Dashboard");
+                    return RedirectToAction("Login", "Login");
                 }
             }
             catch (Exception ex)

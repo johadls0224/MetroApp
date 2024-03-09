@@ -12,6 +12,12 @@ namespace MetroApp.DataLayer.Context
     public class MetroAppContext : DbContext
     {
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<TarjetaPagos> TarjetaPagos { get; set; }
+        public DbSet<TarjetaMetro> TarjetaMetro { get; set; }
+        public DbSet<Pagos> Pagos { get; set; }
+        public DbSet<Notificacion> Notificacion { get; set; }
+
+
 
 
         public MetroAppContext()

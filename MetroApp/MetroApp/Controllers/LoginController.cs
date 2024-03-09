@@ -26,9 +26,9 @@ namespace MetroApp.Controllers
                     if (login != null)
                     {
                         Session["UserName"] = (login.Nombre);
-                        Session["UserName"] = (login.Apellido);
+                        Session["UserLastname"] = (login.Apellido);
                         Session["Cedula"] = Cedula;
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Dashboard");
                     }
                     else
                     {

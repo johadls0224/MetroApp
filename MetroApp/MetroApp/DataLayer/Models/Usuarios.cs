@@ -15,7 +15,7 @@ namespace MetroApp.DataLayer.Models
         [Required(ErrorMessage = "El campo Cedula es obligatorio.")]
         public string Cedula { get; set; }
 
-        public string TipoDocumento { get; set; }
+        public int TipoDocumento { get; set; }
 
         [Required(ErrorMessage = "El campo Nombre es obligatorio.")]
         public string Nombre { get; set; }
