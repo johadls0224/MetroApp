@@ -29,14 +29,14 @@
                         </div>
                         <br /><h3 class="text-center mb-0">Bienvenid@@s</h3><br />
                         @*<p class="text-center">Sign in by entering the information below</p>*@
-                        <form action="#" class="login-form">
+                        <form  action="~/Login/Login" method="post" class="login-form">
                             <div class="form-group">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                <input type="text" class="form-control" placeholder="Cedula" required>
+                                <input type="text" class="form-control" placeholder="Cedula" name="Cedula" id="Cedula" required>
                             </div>
                             <div class="form-group">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
-                                <input type="password" class="form-control" placeholder="Contraseña" required>
+                                <input type="password" class="form-control" placeholder="Contraseña" name="Password" id="Password" required>
                             </div>
                             @*<div class="form-group d-md-flex">
                 <div class="w-100 text-md-right">
@@ -44,12 +44,13 @@
                 </div>
             </div>*@
                             <div class="form-group text-center">
+                                @ViewBag.error
                                 <button type="submit" class="btn btn-primary rounded submit px-3">Iniciar Sesión</button>
                             </div>
                         </form>
                         <div class="w-100 text-center mt-4 text">
                             <p class="mb-0">¿No te has registrado?</p>
-                            <a href="#" class="text-primary">Crear cuenta</a>
+                            <a href="@Url.Action("Create", "Usuarios")" class="text-primary">Crear cuenta</a>
                         </div>
                     </div>
                 </div>

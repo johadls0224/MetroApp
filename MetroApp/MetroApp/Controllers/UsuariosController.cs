@@ -28,11 +28,22 @@ namespace MetroApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Cedula,TipoDocumento,Nombre,Apellido,Email,Password,Telefono,FechaRegistro,EstadoUsuario")] Usuarios usuarios)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Usuarios.Add(usuarios);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+
+                if (ModelState.IsValid)
+                {
+                    usuarios.FechaRegistro = DateTime.Now;
+                    usuarios.EstadoUsuario = true;
+                    db.Usuarios.Add(usuarios);
+                    db.SaveChanges();
+                    return RedirectToAction("Index", "Dashboard");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
             }
 
             return View(usuarios);

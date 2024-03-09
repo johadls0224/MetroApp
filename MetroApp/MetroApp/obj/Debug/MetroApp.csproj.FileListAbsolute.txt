@@ -167,4 +167,4 @@ C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\M
 C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\MetroApp.csproj.CoreCompileInputs.cache
 C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\MetroApp.dll
 C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\MetroApp.pdb
-C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\MetroApp.csproj.Up2Date
+C:\Users\saulx\OneDrive\Documentos\GitHub\MetroApp\MetroApp\MetroApp\obj\Debug\MetroApp.csproj.CopyComplete

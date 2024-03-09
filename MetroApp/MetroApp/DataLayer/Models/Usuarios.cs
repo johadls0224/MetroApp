@@ -11,14 +11,30 @@ namespace MetroApp.DataLayer.Models
     public class Usuarios
     {
         [Key]
+
+        [Required(ErrorMessage = "El campo Cedula es obligatorio.")]
         public string Cedula { get; set; }
+
         public string TipoDocumento { get; set; }
+
+        [Required(ErrorMessage = "El campo Nombre es obligatorio.")]
         public string Nombre { get; set; }
+
+        [Required(ErrorMessage = "El campo Apellido es obligatorio.")]
         public string Apellido { get; set; }
+
+        [Required(ErrorMessage = "El campo Email es obligatorio.")]
+        [EmailAddress(ErrorMessage = "Ingrese un formato de correo electrónico válido.")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "El campo Password es obligatorio.")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "El campo Teléfono es obligatorio.")]
         public string Telefono { get; set; }
-        public string FechaRegistro { get; set; }
-        public string EstadoUsuario { get; set; }
+
+        public DateTime FechaRegistro { get; set; }
+
+        public bool EstadoUsuario { get; set; }
     }
 }
