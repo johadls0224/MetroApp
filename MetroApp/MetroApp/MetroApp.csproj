@@ -156,9 +156,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="LoginContent\css\bootstrap.min.css" />
     <Content Include="LoginContent\css\style.css" />
+    <Content Include="LoginContent\Imagen\add-cart.png" />
+    <Content Include="LoginContent\Imagen\alexuser.jpg" />
+    <Content Include="LoginContent\Imagen\concurrencia.png" />
     <Content Include="LoginContent\Imagen\csm_v2MicrosoftTeams-image__152_-01_ccc4b8a2ac %281%29.png" />
+    <Content Include="LoginContent\Imagen\icons8-mastercard-48.png" />
+    <Content Include="LoginContent\Imagen\icons8-visa-card-48.png" />
     <Content Include="LoginContent\Imagen\Logo_Metro_de_Santo_Domingo.png" />
+    <Content Include="LoginContent\Imagen\mas-info.png" />
     <Content Include="LoginContent\Imagen\pexels-photo-312848.jpg" />
+    <Content Include="LoginContent\Imagen\ver-metros.png" />
     <Content Include="LoginContent\js\bootstrap.min.js" />
     <Content Include="LoginContent\js\jquery.min.js" />
     <Content Include="LoginContent\js\main.js" />

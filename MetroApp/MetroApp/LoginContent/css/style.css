@@ -207,6 +207,162 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
+/*ESTILOS DEL DASHBOARD*/
+/* Estilos generales */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*Estilos para foto usuario*/
+
+.foto-usuario {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.espacio-user{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+/* Estilos para la cabecera */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+/* Estilos para la tarjeta principal */
+
+.tarjeta-principal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta-secundaria {
+    background-color: #99ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.boton-recarga {
+    background-color: #009933;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.otras-tarjetas {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nombre-tarjeta {
+    font-weight: bold;
+}
+
+.ultima-recarga {
+    font-size: 14px;
+    color: #999; /* Light gray color for "Ultima recarga" text */
+}
+
+/* Estilos para las opciones */
+
+.opciones {
+    display: grid; /* Display opciones as a flexbox for horizontal layout */
+    grid-template-columns: 1fr 1fr 1fr;
+    /*    justify-content: space-between;*/ /* Distribute options evenly */
+    margin-top: 20px;
+    grid-gap: 10px;
+}
+
+
+.opcion {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #33cc33;
+    transition: 0.8s;
+    border-radius: 15px;
+}
+
+.opcion:hover{
+    background-color: forestgreen;
+
+}
+
+    .opcion img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .opcion span {
+        display: block;
+        font-size: 10px;
+    }
+
+.texto-boton {
+    color: #000000; /* color rojo para "Nivel de concurrencia" */
+    font-weight: bold;
+    text-align: center;
+    display: block
+}
+/*FINAL ESTILOS DEL DASHBOARD*/
 button,
 input {
   overflow: visible; }
@@ -3820,10 +3976,11 @@ input[type="button"].btn-block {
   margin-left: 1.25rem; }
 
 .card-header {
+  color:black;
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
   .card-header + .list-group .list-group-item:first-child {

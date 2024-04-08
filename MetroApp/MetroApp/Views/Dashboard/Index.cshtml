@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="~/LoginContent/css/style.css" rel="stylesheet" />
+    @*<link href="~/Content/Dashboard.css" rel="stylesheet" />*@
 
 </head>
 <body>
@@ -23,7 +24,67 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
-                        <p>hola</p>
+                        <main>
+                            <div class="espacio-user">
+                                <div>
+                                    <h6>Hola, Alex</h6>
+                                </div>
+                                <div>
+                                    <img src="~/LoginContent/Imagen/alexuser.jpg" class="foto-usuario" />
+                                </div>
+                            </div>
+                            <section class="tarjeta-principal">
+
+                                <div class="tarjeta-secundaria">
+                                    <header class="card-header">
+                                        <h6>Saldo en tarjeta</h6>
+                                    </header>
+                                    <h2>RD$150.00</h2>
+                                    <button class="boton-recarga">Recargar</button>
+                                </div>
+                                <div class="otras-tarjetas">
+                                    <h6>Tarjetas agregadas </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="~/LoginContent/Imagen/icons8-mastercard-48.png" alt="Ver metros">
+                                                <span class="nombre-tarjeta">********8495</span></br>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="~/LoginContent/Imagen/icons8-visa-card-48.png" alt="Ver metros">
+                                                <span class="nombre-tarjeta">********9903</span></br>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    @*<a href="#">Ver todas</a>*@
+                                    <button type="button" class="btn btn-outline-success">
+                                        <a href="#">Ver todas</a>
+                                    </button>
+                                </div>
+                            </section>
+                            <section class="opciones">
+                                <div class="opcion">
+                                    <a href="#">
+                                        <img src="~/LoginContent/Imagen/ver-metros.png" alt="Ver metros">
+                                        <span class="texto-boton">Ver metros</span>
+                                    </a>
+                                </div>
+                                <div class="opcion">
+                                    <a href="#">
+                                        <img src="~/LoginContent/Imagen/add-cart.png" alt="Agregar tarjeta">
+                                        <span class="texto-boton">Agregar tarjeta</span>
+                                    </a>
+                                </div>
+                                <div class="opcion">
+                                    <a href="#">
+                                        <img src="~/LoginContent/Imagen/concurrencia.png" alt="Nivel concurrencia">
+                                        <span class="texto-boton">Nivel de concurrencia@*: Medio*@</span>
+                                    </a>
+                                </div>
+                            </section>
+                        </main>
                     </div>
                 </div>
             </div>
