@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\MetroApp",
-    "\\MetroApp\\MetroApp",
-    "\\MetroApp\\MetroApp\\DataLayer"
+    ""
   ],
-  "SelectedNode": "\\QueryCreacionBaseDeDatos.sql",
+  "SelectedNode": "\\MetroApp.sln",
   "PreviewInSolutionExplorer": false
 }
