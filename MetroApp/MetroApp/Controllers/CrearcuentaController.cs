@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace MetroApp.Controllers
 {
-    public class DashboardController : Controller
+    public class CrearcuentaController : Controller
     {
-        // GET: Dashboard
-        public ActionResult Index()
+        // GET: Crearcuenta
+        public ActionResult Crearcuenta()
         {
             return View();
         }
