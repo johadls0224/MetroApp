@@ -132,12 +132,9 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RecargaController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
-    <Compile Include="Controllers\VerTodasLasTarjetasController.cs" />
     <Compile Include="DataLayer\Access\BaseRepository.cs" />
     <Compile Include="DataLayer\Context\MetroAppContext.cs" />
-    <Compile Include="DataLayer\Models\Recarga.cs" />
     <Compile Include="DataLayer\Models\Notificacion.cs" />
     <Compile Include="DataLayer\Models\Pagos.cs" />
     <Compile Include="DataLayer\Models\TarjetaMetro.cs" />
@@ -211,14 +208,11 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Usuarios\Create.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
-    <Content Include="Views\Recarga\Recargar.cshtml" />
-    <Content Include="Views\Dashboard\VerTodasLasTarjetas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="BusinessLayer\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\VerTodasLasTarjetas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
