@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Agregar Tarjeta de Crédito</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/LoginContent/css/style.css" rel="stylesheet">
+    <style>
+        /* Agrega estilos específicos para esta vista aquí */
+
+        /* Por ejemplo, puedes añadir estilos para el formulario de agregar tarjeta */
+    </style>
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <h2>Agregar Tarjeta de Crédito</h2>
+
+                @using (Html.BeginForm())
+                {
+                    <div class="form-group">
+                        <label>Número de Tarjeta:</label>
+                        @Html.TextBox("cardNumber", null, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Tarjeta:</label>
+                        @Html.DropDownList("cardType", new SelectList(new[]
+                        {
+                            "Visa",
+                            "MasterCard",
+                            "American Express",
+                            // Agrega más tipos de tarjetas según sea necesario
+                        }), "Seleccione un tipo", new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar Tarjeta</button>
+                }
+
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        @ViewBag.Message
+                    </div>
+                }
+
+                <a href="@Url.Action("Index", "Dashboard")" class="boton-volver">Volver</a>
+            </div>
+        </section>
+
+    <script src="~/LoginContent/js/jquery.min.js"></script>
+    <script src="~/LoginContent/js/popper.js"></script>
+    <script src="~/LoginContent/js/bootstrap.min.js"></script>
+    <script src="~/LoginContent/js/main.js"></script>
+
+</body>
+</html>
