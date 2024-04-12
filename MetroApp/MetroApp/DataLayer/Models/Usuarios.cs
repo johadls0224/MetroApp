@@ -11,6 +11,7 @@ namespace MetroApp.DataLayer.Models
     public class Usuarios
     {
         [Key]
+
         [Required(ErrorMessage = "El campo Cedula es obligatorio.")]
         public string Cedula { get; set; }
 
