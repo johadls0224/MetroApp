@@ -30,16 +30,12 @@ namespace MetroApp.Controllers
         {
             try
             {
-                TarjetaMetro tarjetaMetro = new TarjetaMetro();
-                tarjetaMetro.Saldo = 100;
-                tarjetaMetro.Cedula = usuarios.Cedula;
 
                 if (ModelState.IsValid)
                 {
                     usuarios.FechaRegistro = DateTime.Now;
                     usuarios.EstadoUsuario = true;
-                    db.Usuarios.Add(usuarios); // Creacion de usuarios
-                    db.TarjetaMetro.Add(tarjetaMetro); // Se crea nueva tarjeta de metro
+                    db.Usuarios.Add(usuarios);
                     db.SaveChanges();
                     return RedirectToAction("Login", "Login");
                 }
