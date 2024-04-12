@@ -12,7 +12,6 @@ namespace MetroApp.DataLayer.Models
     {
         [Key]
         public int TarjetaId { get; set; }
-        public int NumeroTarjeta { get; set; }
         public double Saldo { get; set; }
         public string Cedula { get; set; }
 

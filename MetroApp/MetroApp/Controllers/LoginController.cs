@@ -39,6 +39,7 @@ namespace MetroApp.Controllers
             }
             catch (Exception ex)
             {
+                ViewBag.error = ex.Message;
                 return View(ex);
             }
         }
