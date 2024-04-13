@@ -129,14 +129,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CrearcuentaController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InformacionesController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RecargaController.cs" />
+    <Compile Include="Controllers\TarjetaPagosController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\VerTodasLasTarjetasController.cs" />
     <Compile Include="DataLayer\Access\BaseRepository.cs" />
     <Compile Include="DataLayer\Context\MetroAppContext.cs" />
+    <Compile Include="DataLayer\Models\TarjetaCredito.cs" />
+    <Compile Include="DataLayer\Models\Recarga.cs" />
     <Compile Include="DataLayer\Models\Notificacion.cs" />
     <Compile Include="DataLayer\Models\Pagos.cs" />
     <Compile Include="DataLayer\Models\TarjetaMetro.cs" />
@@ -156,7 +159,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="InformacionesContent\Rutas.jpg" />
     <Content Include="LoginContent\css\bootstrap.min.css" />
     <Content Include="LoginContent\css\style.css" />
     <Content Include="LoginContent\Imagen\add-cart.png" />
@@ -211,8 +213,9 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Usuarios\Create.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
-    <Content Include="Views\Informaciones\Informaciones.cshtml" />
-    <Content Include="Views\Crearcuenta\Crearcuenta.cshtml" />
+    <Content Include="Views\Dashboard\VerTodasLasTarjetas.cshtml" />
+    <Content Include="Views\Recarga\Recargar.cshtml" />
+    <Content Include="Views\TarjetaPagos\TarjetaPagos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

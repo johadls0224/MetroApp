@@ -10,13 +10,11 @@ namespace MetroApp.DataLayer.Models
     [Table("TarjetaPagos")]
     public class TarjetaPagos
     {
-        [Key]
-        public int TarjetaPagoId { get; set; }
+        [Key] 
         public int Tipo { get; set; }
         public int NumeroTarjeta { get; set; }
         public DateTime FechaVencimiento { get; set; }
         public int CodigoSeguridad { get; set; }
-        public string Cedula { get; set; }
-
+       
     }
 }
